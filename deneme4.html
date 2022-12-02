@@ -21,48 +21,51 @@
             YÜZDE KAÇ GAYSİN?
         </h1></i>
             </div>
-    <div class="yüzde">
-        <tr>
-            <th>
-                ?
-            </th>
-            
-        </tr>
-    </div>
-    <div class="yüzde-2">
-        <tr>
-            <th>
-                %
-            </th>
-        </tr>
-    </div>
+
+<span class="yüzde">?</span>
+
+<span class="yüzde-2">%</span>
+    
 
 <style>
     .container{
         text-align: center;
-        margin-top: 190px;
-        margin-right: 50px;
+        margin-top: 10%;
+        margin-bottom: 12%;
+        font-size: 140%;
     }
     .gay{
         text-align: center;
-        margin-top: 10px;
-        margin-left: 675px;
-        font-size: 30px; 
+        width: 10%;
+        /* display: block; */
+        margin-left: 50%;
+        margin-top: 1%;
     }
     .yüzde{
         font-size: 60px;
-        margin-top:135px ;
-        margin-left: 675px;
-        display: inline-block; 
+        margin-left: 47%;
     }
     .yüzde-2{
         font-size: 60px;
-        margin-top:0px ;
-        margin-left: 0px; 
-        display: inline-block;
+
+       
     }
+    .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 47%;
+}
 </style>
-<input type="button" name="button" id="selam" class="gay" value="BAŞLA">
+<br>
+<input type="button" name="button" id="selam" class="button" value="BAŞLA">
 <script>
     document.querySelector(".yüzde").textContent = 0;
 let secretNumber = Math.trunc(Math.random()*100)+1;
