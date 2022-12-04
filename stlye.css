@@ -98,3 +98,20 @@ font-size: 2rem;
 .label-2{
     margin-bottom: 2rem;
 }
+@media screen and (max-width: 700px) {
+html{
+    font-size: 40%;
+}
+.message{
+    margin-bottom: 13.5rem;
+    height: 3rem;
+}
+.right{
+    width: 52rem;
+    font-size: 2rem;
+    margin-left: 15px;
+    }
+.check{
+    margin-top: 19px;
+}
+}
