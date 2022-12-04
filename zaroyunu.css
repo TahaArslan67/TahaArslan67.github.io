@@ -11,7 +11,9 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+img{
+    border-radius: 13.5%;
+}
 main{
     position: relative;
     width: 100rem;
