@@ -33,5 +33,9 @@ else if(username1=="taharslan1" && password1=="00228t1"){
     password1=false;
 }
 if(username1==false && password1==false){
-    alert("WRONG USERNAME OR PASSWORD")
+    document.querySelector(".alert").classList.remove("hidden");
     }};
+
+
+
+    

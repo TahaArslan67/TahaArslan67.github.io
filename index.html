@@ -67,7 +67,45 @@
         margin-top: 150px;
         
     }
+    .alert {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #f44336;
+    color: white;
+    margin-left: 33.9%;
+    width: 490px;
+    border-radius: 10px;
+    word-spacing: 9px;
+    letter-spacing: 2px;
+    box-shadow: 0 0 2rem #f44336;
+}
+.container2{
+    width: 460px;
+        height: 60%;
+        background-position: center;
+        margin: auto;
+        padding: 10px;
+        margin-top: 10px;
+        padding-top: 10px;
+padding-bottom: 10px;
+}
+.hidden2{
+    display: none;
+}
+.closebtn {
+    margin-right: 12px;
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+}
 
+.closebtn:hover {
+    color: black;
+}
     form{
         box-shadow: 0 0 2.3px rgb(255, 255, 255, 0.4);
         
@@ -146,10 +184,35 @@ padding-bottom: 10px;
         font-weight: 600;
         font-size: 140%;
     }
+    .container2{
+    width: 200px;
+        height: 60%;
+        font-size: 10px;
+        background-position: center;
+        margin: auto;
+        padding: 0px;
+        margin-top: 10px;
+        padding-top: 10px;
+padding-bottom: 10px;
+}
+.alert {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #f44336;
+    color: white;
+    left: 50%;
+    width: 313px;
+    border-radius: 10px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    box-shadow: 0 0 2rem #f44336;
+    font-size: 15px;
+}
+
     }
 </style>
-    <div class="col-sm-12 col-md-4 col-lg-4 asd kayis container">
-        <form class="kayis2" action="Home.html"; onbutton="return fonksio()">
+    <div class="">
+        <form class="kayis2 col-sm-12 col-md-4 col-lg-4 asd kayis container" action="Home.html"; onbutton="return fonksio()">
 
 
 <h3 class="p1">
@@ -165,7 +228,17 @@ padding-bottom: 10px;
 </div>
 
 
-</form></div>
+</form><br><br>
+<div class="alert container2 hidden">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span> 
+    <strong>Danger!</strong> Invalid username and password.
+  </div></div>
+
+
+
+
+
+
 <script src="index.js"></script>
 </body>
 </html>
