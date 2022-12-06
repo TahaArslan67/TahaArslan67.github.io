@@ -13,7 +13,7 @@ if(username1=="taharslan" && password1=="00228t"){
 
 // ÜSTTEKİNİ KOPYALAYARAK HESAP EKLE
 
-else if(username1=="taharslan1" && password1=="00228t1"){
+else if(username1=="taharslan2" && password1=="00228t2"){
     window.location.href ="http://127.0.0.1:5501/Home.html" ;
 }
 
