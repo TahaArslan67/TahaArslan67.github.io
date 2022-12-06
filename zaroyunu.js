@@ -10,6 +10,8 @@ const diceEl = document.querySelector(".dice");
 const btnNew = document.querySelector(".btn--new");
 const btnRoll = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold");
+const info = document.querySelector(".duyuru");
+const info2 = document.querySelector(".duyuru2");
 
 let scores, currentScore, activePlayer, playing;
 
@@ -27,6 +29,7 @@ const init = function(){
     diceEl.classList.add("hidden");
     player0El.classList.remove("player--active");
     player1El.classList.remove("player--active");
+    info2.classList.add("hidden");
 };
 
 init();
@@ -76,6 +79,10 @@ btnHold.addEventListener("click",function(){
         if(scores[activePlayer]>=100){
             playing=false;
             diceEl.classList.add("hidden");
+            btnRoll.classList.add("hidden");
+            btnHold.classList.add("hidden");
+            info.classList.add("hidden");
+            info2.classList.remove("hidden");
 
         document.querySelector(`.player--${activePlayer}`).classList.add("player--winner");
         document.querySelector(`.player--${activePlayer}`).classList.add("player--active");
@@ -95,5 +102,9 @@ btnHold.addEventListener("click",function(){
 
 btnNew.addEventListener("click", function(){
 document.querySelector(`.player--${activePlayer}`).classList.remove("player--winner");
+btnRoll.classList.remove("hidden");
+btnHold.classList.remove("hidden");
+info.classList.remove("hidden");
+info2.classList.add("hidden");
 })
 btnNew.addEventListener("click", init);
