@@ -76,7 +76,7 @@ btnHold.addEventListener("click",function(){
     document.getElementById(`name--${activePlayer}`).classList.add("kalin");
     
 }
-        if(scores[activePlayer]>=100){
+        if(scores[activePlayer]>=1){
             playing=false;
             diceEl.classList.add("hidden");
             btnRoll.classList.add("hidden");

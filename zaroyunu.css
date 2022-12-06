@@ -4,7 +4,7 @@ html{
 body{
     font-family: sans-serif;
     font-weight: 400;
-    height: 100vh;
+    height: 97.9vh;
     color: #333;
     background-image: linear-gradient(to top left,#753682 0%, #bf2e34 100%);
     display: flex;
@@ -106,7 +106,8 @@ main{
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.6);
     text-transform: uppercase;
     font-size: 35px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.674);
+    border-radius: 3px;
 }
 
 .btn{
@@ -220,5 +221,23 @@ main{
         color: #c7365f;
         margin-top: 21px;
         margin-bottom: 23px;
+    }
+    .duyuru2{
+        color: red;
+        position: absolute;
+        left: 50%;
+        top: 20rem;
+        transform: translateX(-50%);
+        box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.6);
+        text-transform: uppercase;
+        font-size: 25px;
+        background-color: rgba(255, 255, 255, 0.681);
+        border-radius: 3px;
+    }
+    body{
+        height: 97.3369552226vh;
+    }
+    .duyuru{
+        font-size: 10px;
     }
 }
