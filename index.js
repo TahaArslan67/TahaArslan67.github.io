@@ -1,6 +1,7 @@
 function fonksio(){
 var username1 = document.getElementById("klncadi").value;
 var password1 = document.getElementById("password").value;
+
 console.log(username1);
 console.log(password1);
 
@@ -38,4 +39,6 @@ if(username1==false && password1==false){
 
 
 
-    
+  function fonksio1(){
+    document.querySelector(".alert").classList.add("hidden");
+  }
