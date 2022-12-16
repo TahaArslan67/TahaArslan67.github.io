@@ -89,25 +89,36 @@ form{
 input{
     width: 70%;
 }
+.add{
+    width: 15%;
+    font-weight: 900;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.add:hover{
+    width: 15.8%;
+    margin-right: 2.57px;
+    margin-left: 2.6px;
+}
 .button{
     background-color:tomato;
     color:white;
-    width:71.524%;
-    margin-left: 27.1%;
+    width:50%;
+    margin-left: 22.1%;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.35);
     cursor: pointer;
     transition: all 0.2;
     margin-top: 13px;
 }
-button:hover{
+.button:hover{
     transition: 0.1s ease-in;
-    width: 70%;
-    margin-left: 27.8%;
+    width: 51%;
+    margin-left: 21.6%;
     box-shadow: 0 1rem 2rem rgba(160, 51, 51, 0.35);
     color:black;
     border-color: #55E6C1;
 }
-button:focus{
+.button:focus{
     color:rgb(255, 255, 255);
 }
 .sentences{
@@ -144,3 +155,38 @@ li{
 ul{
     padding-left: 20px;
 }
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    margin-left: 70%;
+    margin-top: 1%;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+    
+  }
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .header {
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
