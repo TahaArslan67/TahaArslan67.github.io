@@ -9,7 +9,9 @@ console.log(password1);
 if(username1=="taharslan" && password1=="00228t"){
         window.location.href ="Home.html" ;
 }  
-
+if(username1=="tunat" && password1=="dayımınözoğlu67"){
+  window.location.href ="Home.html" ;
+} 
     
 
 // ÜSTTEKİNİ KOPYALAYARAK HESAP EKLE
