@@ -10,7 +10,7 @@ if(username1=="taharslan" && password1=="00228t"){
         window.location.href ="Home.html" ;
 }  
 else if(username1=="tunat" && password1=="dayımınözoğlu67"){
-  window.location.href ="Home.html" ;
+  window.location.href ="DAYIMINOZOGLU.html" ;
 } 
     
 
