@@ -12,6 +12,9 @@ if(username1=="taharslan" && password1=="00228t"){
 else if(username1=="tunat" && password1=="dayımınözoğlu67"){
   window.location.href ="DAYIMINOZOGLU.html" ;
 } 
+else if(username1=="ayı" && password1=="şalterci"){
+  window.location.href ="DAYIMINOZOGLU.html" ;
+}
     
 
 // ÜSTTEKİNİ KOPYALAYARAK HESAP EKLE
