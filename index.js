@@ -13,7 +13,7 @@ else if(username1=="tunat" && password1=="dayımınözoğlu67"){
   window.location.href ="DAYIMINOZOGLU.html" ;
 } 
 else if(username1=="ayı" && password1=="şalterci"){
-  window.location.href ="DAYIMINOZOGLU.html" ;
+  window.location.href ="Home.html" ;
 }
     
 
