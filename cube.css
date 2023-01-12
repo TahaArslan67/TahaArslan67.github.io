@@ -73,3 +73,11 @@ body{
     0 0 400px rgba(0, 255, 0, 0.8),
     0 0 500px rgba(0, 255, 0, 1),
 }
+
+@media screen and (max-width: 700px) {
+    body {
+        zoom: 0.8; /* Other non-webkit browsers */
+        zoom: 60%; /* Webkit browsers */
+        margin-top: 200px;
+        }
+}
