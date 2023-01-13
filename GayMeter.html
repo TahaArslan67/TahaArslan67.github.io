@@ -99,11 +99,14 @@
 }
 </style>
 <br>
-<input type="button" name="button" id="selam" class="button" value="BAŞLA">
+<audio id="audio" src="Gay Echo Voice TikTok Sound Effect.mp4" autostart="false" ></audio>
+<audio id="audio2" src="The Rock.mp4" autostart="false" ></audio>
+<button id="selam" type="button" name="button" class="button">BAŞLA</button>
 <script>
+
     document.querySelector(".yüzde").textContent = 0;
 let secretNumber = Math.trunc(Math.random()*100)+1;
-    console.log(secretNumber,typeof secretNumber)
+
 
     var btnSelam=document.getElementsByClassName(".gay");
 	btnSelam.onclick=function(){
@@ -114,7 +117,18 @@ let secretNumber = Math.trunc(Math.random()*100)+1;
 		document.querySelector(".yüzde").textContent = secretNumber;
         secretNumber = Math.trunc(Math.random()*100)+1;
         console.log(secretNumber,typeof secretNumber)
-	}
+        if(document.querySelector(".yüzde").textContent>=90){
+          var sound = document.getElementById("audio");
+          sound.play()
+      }
+     else if(document.querySelector(".yüzde").textContent<90 && document.querySelector(".yüzde").textContent>=65){
+        var sound = document.getElementById("audio2");
+          sound.play()
+        }}
+	
+
+
+
 </script>
 </body>
 </html>
