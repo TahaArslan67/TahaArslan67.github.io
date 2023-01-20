@@ -1,7 +1,7 @@
 var tarot = document.querySelector(".tarot");
 var tarotkartsayisi = Math.trunc(Math.random()*78)+1;
 console.log(tarotkartsayisi);
-tarot.src= `tarotresimleri/tarot-${tarotkartsayisi}.jpg`;
+tarot.src= `tarot-${tarotkartsayisi}.jpg`;
 var tarotkartsayisitutucu = tarotkartsayisi;
 var falinabak = document.querySelector(".btn-bordered-black2");
 var gizlenen1 = document.querySelector(".tarotresmikutusu");
@@ -122,7 +122,7 @@ console.log(tarotkartsayisitutucu);
 }
 tarotkartsayisitutucu = tarotkartsayisi;
 console.log(tarotkartsayisi);
-    tarot.src= `tarotresimleri/tarot-${tarotkartsayisi}.jpg`;
+    tarot.src= `tarot-${tarotkartsayisi}.jpg`;
 if(tarotkartsayisi==1){
 icerik.textContent= "Paranın, gücün, ihtiras ve iktidarın gözünüzü aldığı bir dönemden geçiyor olabilirsiniz. Yanlış yapmamak adına çok dikkatli ve temkinli davranmanıza işaret eden bir kart. Hırs, para ve güç sizi aldatmış olabilir veya her an aldatabilir, bu tuzaklara dalıp kaybolmamış olmaya dikkat etmelisiniz. En uyarıcı kartlardan biridir. İyi tarafınızı, temiz kalbinizi korumanız gerektiği uyarısında bulunur.Bu dönemde ilişkiler anlamında aşırı bağımlılıklara, maddi ve manevi köleliğe işaret eder. Bunlardan kurtulmak için korkularınızla yüzleşmeniz gerekebilir. İyi tarafta kalmak, kötü tarafa dalmak arasında karar vermek ve doğruyu seçmek zorundasınız. Bu dönem karşınıza, zengin, kibirli, güç tutsağı kişileri çıkarabilir, bu kişilerin etkisinde kalmamaya dikkat etmelisiniz.";
 }
