@@ -214,15 +214,15 @@ padding-bottom: 10px;
 
 
 <h3 class="p1">
-    <i>Username:<input class="user" autocomplete="off" type="text" name="klncadi" id="klncadi"></i>
+    <i>Username:<input class="user" autocomplete="off" type="text" name="klncadi" id="klncadi" onkeydown="if (event.keyCode == 13) { fonksio(); }"></i>
 </h3>
 
 <h3 class="h3">
-    <i>Password:<input type="password" name="password" id="password"></i>
+    <i>Password:<input type="password" name="password" id="password" onkeydown="if (event.keyCode == 13) { fonksio(); }"></i>
 </h3>
 
 <div class="a">
-    <input id="giris" type="button" onclick="fonksio()" value="LOGIN" name="giriş">
+    <input id="giris" type="button" onclick="fonksio()"  value="LOGIN" name="giriş">
 </div>
 
 

@@ -63,6 +63,17 @@ img{
     text-decoration: none;
     padding: 17px 20px;
     font-weight: 700;
+    margin-top: 30px;
+    text-align: right;
+}
+.btn-bordered-black4 {
+    width: 240px;
+    display: inline-block;
+    border: 3px solid #000;
+    color: #000!important;
+    text-decoration: none;
+    padding: 17px 20px;
+    font-weight: 700;
     margin-top: 30px
 }
 .btn-bordered-black3 {

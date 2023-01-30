@@ -93,15 +93,24 @@
               .yazibüyütme{
             font-size: 50px;
               }
-            </style>
-          </nav><ol class="yazibüyütme">
+              @media screen and (max-width: 700px) {
+                .s340{
+                  width: 340px;
 
-              <a href="GayMeter.html"><button class="button-1 button1">1. GAY METER</button></a>
+                }
+              }
+            </style>
+          </nav>
+<div>
+          <ol class="yazibüyütme">
+<div class="s340">
+              <a href="GayMeter.html"> <button class="button-1 button1">1. GAY METER</button></a>
               <a href="GuessNumber.html"><button class="button-1 button1">2. GUESS NUMBER</button></a>
               <a href="dice.html"><button class="button-1 button1">3. DICE GAME</button></a>
               <a href="english word practice.html"><button class="button-1 button1">4. ENGLISH PRACTICE APP (NOT DONE)</button></a>
               <a href="tarot.html"><button class="button-1 button1">5. TAROT</button></a>
-        </ol>
+            </div>
+        </ol></div>
 <br><br>
           </div>
 </body>

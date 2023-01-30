@@ -87,6 +87,12 @@ a:hover{
             .intent3{
                 text-indent: 0px;
             }
+            .row>* {
+
+    max-width: 33.333%;
+    min-width: 33.333%;
+    size: 100px;
+}
             @media screen and (max-width: 700px) {
 
 
@@ -101,8 +107,9 @@ a:hover{
         }
         #alert-close {
 padding-top: 20px;
-        } 
-              .row>* {
+        }  
+
+.row>* {
     width: 100px;
     max-width: 100%;
     min-width: 33.333%;
@@ -160,7 +167,7 @@ padding-top: 20px;
                         </a>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item intent3" href="FAQ.HTML">○  FAQ</a></li>
-                          <li><a class="dropdown-item intent3" href="Report.html">○  Report</a></li>
+                          <li><a class="dropdown-item intent3" href="Report.php">○  Report</a></li>
                           <li><hr class="dropdown-divider"></li>
                           <li><a class="dropdown-item intent3" href="Contact.html">○  Contact</a></li>
                         </ul>

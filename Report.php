@@ -11,13 +11,9 @@
     <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   </head>
   <body>
-    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
   <style>
@@ -128,7 +124,7 @@ input[type=submit]:hover {
      
 </div>
 <div class="container1">
-  <form action="/action_page.php">
+  <form action="Report.php" method="post">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -138,26 +134,50 @@ input[type=submit]:hover {
     <h3 class="gender">Gender</h3>
     <label class="example-radio">
         Male
-        <input type="radio" checked="checked" name="radio">
+        <input type="radio" checked="checked" name="radio" id="gender">
         <span class="checkmark-radio"></span>
     </label>
     <label class="example-radio">
         Female
-        <input type="radio" name="radio">
+        <input type="radio" name="radio" id="gender">
         <span class="checkmark-radio"></span>
     </label>
     <h4 class="gender2">Age</h4>
-    <input type="number" min="0" max="100"/>
+    <input type="number" min="0" max="100" id="age" name="age"/>
   </tr>
     <hr>
 
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" onclick="function1()">
   </form>
 </div>
-
+<script src="report.js"></script>
 </html>
 </body>
 </html>
+
+
+<?php
+
+include("baglanti.php");
+
+
+if(isset($_POST["firstname"], $_POST["lastname"], $_POST["age"], $_POST["subject"]))
+{
+  $ad=$_POST["firstname"];
+  $soyad=$_POST["lastname"];
+  $age=$_POST["age"];
+  $subject=$_POST["subject"];
+
+  $ekle="INSERT INTO iletisim(ad, soyad, age, subject ) VALUES ('".$ad."','".$soyad."','".$age."','".$subject."')";
+
+
+  if($baglan->query($ekle)===TRUE)
+  {
+    echo "<script>alert('Mesajınız başarılı')</script>";
+  }
+}
+
+
+?>
