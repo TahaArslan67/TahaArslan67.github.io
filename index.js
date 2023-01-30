@@ -10,23 +10,23 @@ if(username1=="taharslan" && password1=="00228t"){
         window.location.href ="Home.php" ;
 }  
 else if(username1=="tunat" && password1=="dayımınözoğlu67"){
-  window.location.href ="Home.html" ;
+  window.location.href ="Home.php" ;
 } 
 else if(username1=="ayı" && password1=="şalterci"){
-  window.location.href ="Home.html" ;
+  window.location.href ="Home.php" ;
 }
     
 
 // ÜSTTEKİNİ KOPYALAYARAK HESAP EKLE
 
 else if(username1=="Taharslan" && password1=="00228t"){
-    window.location.href ="Home.html" ;
+    window.location.href ="Home.php" ;
 }
 else if(username1=="Taharslan" && password1=="0022800228t"){
-  window.location.href ="Home.html" ;
+  window.location.href ="Home.php" ;
 }
 else if(username1=="taharslan" && password1=="0022800228t"){
-  window.location.href ="Home.html" ;
+  window.location.href ="Home.php" ;
 }
 
 
