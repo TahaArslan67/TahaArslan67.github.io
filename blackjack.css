@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 40px;
+    background: #27282c;
+}
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+#myContent {
+    height: 100%;
+}
+/* end hide */
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #090;
+}
+.banner{
+    background: url('blackjack-background.jpg') no-repeat center center fixed;
+width: 100%;
+height: 100%;
+-webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+}
+.a{
+    position:relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+.a:hover{
+    letter-spacing: .25em;
+    background: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+    color: var(--clr);
+
+}
+.a::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+.a span{
+    position: relative;
+    z-index: 1;
+}
+.a i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+.a i::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: -6px;
+    left: 100%;
+    transform: translateX(-50%);
+    background: #27282c;
+    border: 2px solid var(--clr);
+    transition: 0.5s;
+}
+.a:hover i::before{
+    left: 0%;
+    transform: translateX(-50%) rotate(45deg);
+    box-shadow: 40px 39px var(--clr);
+}
+.a i::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: -6px;
+    left: 0%;
+    transform: translateX(-50%);
+    background: #27282c;
+    border: 2px solid var(--clr);
+    transition: 0.5s;
+}
+.a:hover i::after{
+    left: 100%;
+    transform: translateX(-50%) rotate(-45deg);
+    box-shadow: 38px -39px var(--clr);
+}
+.cip img{
+    max-width: 70px;
+    height: auto;
+}
+.cip{
+    margin-top: 10px;
+    text-align: center;
+}
+.cipyeri{
+    margin-top: 350px;
+}
+img {
+    max-width: 100%;
+    height: auto; 
+    margin-left: 7px;
+    margin-right: 7px;  
+}
+.bet{
+    background-color: rgba(0, 0, 0, 0.504);
+    color: white;
+    border-radius: 12px;
+    width: 150px;
+    text-align: center;
+}
+.money-bag{
+
+    position: absolute;
+      right: 15px;
+      top: 30px;
+      width: 250px;
+      background-color: #27282c71;
+      border-radius: 20px; 
+      
+}
+.money{
+    position: absolute;
+    right: 80px;
+    top: 12px;
+    color: whitesmoke;
+    margin-top: 1px;
+}
+.moneybag{
+    max-width: 50px;
+    height: auto;
+    margin-top: 7px;
+}
+
