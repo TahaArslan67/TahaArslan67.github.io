@@ -30,7 +30,7 @@
             background-size: cover;
 }
     .intent1{
-        text-indent: 30px;
+        text-indent: 30.0001px;
     }
     .intent2{
         text-indent: 60px;
