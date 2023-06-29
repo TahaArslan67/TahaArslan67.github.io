@@ -77,20 +77,20 @@
                     <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
                   </li>
                   <li class="nav-item intent2">
-                    <a class="nav-link" href="Programs.html">Programs</a>
+                    <a class="nav-link" href="Programs.php">Programs</a>
                   </li>
                   <li class="nav-item intent2">
-                    <a class="nav-link" href="additions.html">Additions</a>
+                    <a class="nav-link" href="additions.php">Additions</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle intent2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Help
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item intent3" href="FAQ.HTML">○  FAQ</a></li>
-                      <li><a class="dropdown-item intent3" href="Report.html">○  Report</a></li>
+                      <li><a class="dropdown-item intent3" href="FAQ.php">○  FAQ</a></li>
+                      <li><a class="dropdown-item intent3" href="Report.php">○  Report</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item intent3" href="Contact.html">○  Contact</a></li>
+                      <li><a class="dropdown-item intent3" href="Contact.php">○  Contact</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -103,9 +103,9 @@
             </style>
           </nav><ol class="yazibüyütme">
 
-              <a href="cube.html"><button class="button-1 button1">1. 3D ANIMATED CUBE</button></a>
-              <a href="button.html"><button class="button-1 button1">2. SPECIAL BUTTONS</button></a>
-              <a href="heartanimation.html"><button class="button-1 button1">3. HEART ANIMATION</button></a>
+              <a href="cube.php"><button class="button-1 button1">1. 3D ANIMATED CUBE</button></a>
+              <a href="button.php"><button class="button-1 button1">2. SPECIAL BUTTONS</button></a>
+              <a href="heartanimation.php"><button class="button-1 button1">3. HEART ANIMATION</button></a>
         </ol>
 <br><br>
           </div>

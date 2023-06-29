@@ -9,7 +9,7 @@
     <title>Blackjack</title>
 </head>
 <body class="banner">
-    <a href="blackjack2.html" style="--clr:#1e9bff" onclick="baslat()" class="a"><span>START</span><i></i></a>
+    <a href="blackjack2.php" style="--clr:#1e9bff" onclick="baslat()" class="a"><span>START</span><i></i></a>
     <script src="blackjack.js"></script>
 </body>
 </html>

@@ -1,3 +1,11 @@
+<?php
+session_start();
+if($_SESSION["user"]=="")
+{
+  echo "<script>window.location.href='cikis.php'</script>";
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,18 +22,18 @@
 <body class="banner">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
-<script>function showDialog(text) {
-  document.getElementById("alert-text").innerHTML = text;
-  document.getElementById("my-alert").style.display = "block";
-  document.getElementById("alert-text").textContent = "DAYIMIN ÖZ OĞLU HOŞ GELDİN!";
-}
-(function() {
-    window.alert = function() {
-        return showDialog(arguments[0]);
-    };
-})();</script>
+  <script>function showDialog(text) {
+    // document.getElementById("alert-text").innerHTML = text;
+    document.getElementById("my-alert").style.display = "block";
+    document.getElementById("alert-text").textContent = "DAYIMIN ÖZ OĞLU HOŞ GELDİN!";
+  }
+  (function() {
+      window.alert = function() {
+          return showDialog(arguments[0]);
+      };
+  })();</script>
         <style>
-          #alert-text{
+           #alert-text{
             font-size: 190%;
             text-align: center;
             margin-left: 40px;
@@ -50,7 +58,7 @@
           
             text-align: center;
             padding-top: 40px;
-        }
+        } 
 .banner{
   
   background-image: url('pexels-francesco-ungaro-2835436.jpg');
@@ -87,31 +95,67 @@ a:hover{
             .intent3{
                 text-indent: 0px;
             }
+            .row>* {
+
+    max-width: 33.333%;
+    min-width: 33.333%;
+    size: 100px;
+}
             @media screen and (max-width: 700px) {
 
 
 
-
-          #alert-text{
+              #alert-text{
             font-size: 155%;
           }
-                 #my-alert {
+          #my-alert {
             top: 31%;
             left: 11%;
             width: 300px;
         }
-
         #alert-close {
 padding-top: 20px;
-        }    
-            }
+        }  
 
+.row>* {
+    width: 100px;
+    max-width: 100%;
+    min-width: 33.333%;
+    size: 100px;
+}
+.card{
+  height: 100px;
+}
+.iframe{
+  margin-bottom: 0px;
+  height: 90px;
+}
+.card-title{
+  margin-bottom: 0px;
+}
+.card-body{
+  padding: 5px;
+}
+.col-sm{
+  margin-bottom: 100px;
+}
+.yaslama{
+  margin-left:0px;
+}
+
+
+
+
+            }
+            .yaslama {
+  margin-left: 500px;
+}
         </style>
         
         <div class="container">
             <nav class="navbar navbar-expand-lg intent1">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="Home.html">
+                    <a class="navbar-brand" href="Home.php">
                         <img src="cec.png" alt="Bootstrap" width="70" height="30">
                       </a>
                   <a class="navbar-brand" href="#" class="navbarborder"></a>
@@ -121,24 +165,28 @@ padding-top: 20px;
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="Home.php">Home</a>
                       </li>
                       <li class="nav-item intent2">
-                        <a class="nav-link" href="Programs.html">Programs</a>
+                        <a class="nav-link" href="Programs.php">Programs</a>
                       </li>
                       <li class="nav-item intent2">
-                        <a class="nav-link" href="additions.html">Additions</a>
+                        <a class="nav-link" href="additions.php">Additions</a>
                       </li>
+                      
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle intent2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Help
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item intent3" href="FAQ.HTML">○  FAQ</a></li>
-                          <li><a class="dropdown-item intent3" href="Report.html">○  Report</a></li>
+                          <li><a class="dropdown-item intent3" href="FAQ.php">○  FAQ</a></li>
+                          <li><a class="dropdown-item intent3" href="Report.php">○  Report</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item intent3" href="Contact.html">○  Contact</a></li>
+                          <li><a class="dropdown-item intent3" href="Contact.php">○  Contact</a></li>
                         </ul>
+                      </li>
+                      <li class="nav-item intent2">
+                        <a class="nav-link yaslama" right; href="cikis.php">Log out</a>
                       </li>
                     </ul>
                   </div>
@@ -152,26 +200,26 @@ padding-top: 20px;
   </div>
   <div class="carousel-inner" style="border-radius: 20px;">
     <div class="carousel-item active">
-      <img src="resim1.png" class="d-block w-100" alt="...">
+      <img src="resim1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
 <!-- //BURASI DAYIMIN ÖZ OĞLUNA AYIRTILDI
 //BURASI DAYIMIN ÖZ OĞLUNA AYIRTILDI
 //BURASI DAYIMIN ÖZ OĞLUNA AYIRTILDI -->
-        <h5>First Random Pic</h5>
+        <h5>In game views</h5>
         <p></p>
       </div>
     </div>
     <div class="carousel-item" style="border-radius: 20px;">
-      <img src="resim2.png" class="d-block w-100" alt="...">
+      <img src="resim2.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second Random Pic</h5>
+        <h5>In game views</h5>
         <p></p>
       </div>
     </div>
     <div class="carousel-item" style="border-radius: 20px;">
-      <img src="resim3.png" class="d-block w-100" alt="...">
+      <img src="resim3.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third Random Pic</h5>
+        <h5>In game views</h5>
         <p></p>
       </div>
     </div>
@@ -199,7 +247,7 @@ padding-top: 20px;
         <div class="row my-10 mx-10">
             <div class="col-sm">
                 <div class="card my-5">
-                  <iframe src="https://www.youtube.com/embed/M9dHFgpO2Ro" height="250px" frameborder="1"></iframe>
+                  <iframe src="https://www.youtube.com/embed/M9dHFgpO2Ro" height="250px" frameborder="1" class="iframe"></iframe>
                     <div class="card-body">
                       <h5 class="card-title">MY #1 BEAT</h5>
                       <p class="card-text"></p>
@@ -216,7 +264,7 @@ padding-top: 20px;
             <div class="col-sm">
 
                 <div class="card my-5">
-                  <iframe src="https://www.youtube.com/embed/-IwaDjheq54" height="250px" frameborder="1"></iframe>
+                  <iframe src="https://www.youtube.com/embed/-IwaDjheq54" height="250px" frameborder="1" class="iframe"></iframe>
                     <div class="card-body">
                       <h5 class="card-title">MY #2 BEAT</h5>
                       <p class="card-text"></p>
@@ -232,7 +280,7 @@ padding-top: 20px;
             <div class="col-sm">
 
                 <div class="card my-5">
-                  <iframe src="https://www.youtube.com/embed/gMIo2f_9Bso" height="250px" frameborder="1"></iframe>
+                  <iframe src="https://www.youtube.com/embed/gMIo2f_9Bso" height="250px" frameborder="1" class="iframe"></iframe>
                     <div class="card-body">
                       <h5 class="card-title">MY #3 BEAT</h5>
                       <p class="card-text"></p>
@@ -245,12 +293,81 @@ padding-top: 20px;
                   </div>
 
             </div>
+            <div class="col-sm">
+              <div class="card my-5">
+                <iframe src="https://www.youtube.com/embed/yuPsOYm1lzE" height="250px" frameborder="1" class="iframe"></iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">MY #4 BEAT</h5>
+                    <p class="card-text"></p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+
+                  </ul>
+                  <div class="card-body">
+                    <a href="https://www.youtube.com/watch?v=yuPsOYm1lzE" class="card-link">LINK</a>
+                  </div>
+                </div>
+              </div>
+                <div class="col-sm">
+                  <div class="card my-5">
+                    <iframe src="https://www.youtube.com/embed/dch5Ii-8H1A" height="250px" frameborder="1" class="iframe"></iframe>
+                      <div class="card-body">
+                        <h5 class="card-title">MY #5 BEAT</h5>
+                        <p class="card-text"></p>
+                      </div>
+                      <ul class="list-group list-group-flush">
+    
+                      </ul>
+                      <div class="card-body">
+                        <a href="https://www.youtube.com/watch?v=dch5Ii-8H1A" class="card-link">LINK</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <div class="card my-5">
+                      <iframe src="https://www.youtube.com/embed/dZJu9PuOaQI" height="250px" frameborder="1" class="iframe"></iframe>
+                        <div class="card-body">
+                          <h5 class="card-title">MY #6 BEAT</h5>
+                          <p class="card-text"></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+      
+                        </ul>
+                        <div class="card-body">
+                          <a href="https://www.youtube.com/watch?v=dZJu9PuOaQI" class="card-link">LINK</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm">
+                      <div class="card my-5">
+                        <iframe src="https://www.youtube.com/embed/kIZTsuDoT74" height="250px" frameborder="1" class="iframe"></iframe>
+                          <div class="card-body">
+                            <h5 class="card-title">MY #7 BEAT</h5>
+                            <p class="card-text"></p>
+                          </div>
+                          <ul class="list-group list-group-flush">
+        
+                          </ul>
+                          <div class="card-body">
+                            <a href="https://www.youtube.com/watch?v=kIZTsuDoT74" class="card-link">LINK</a>
+                          </div>
+                        </div>
+                      </div>
+                  <div id="my-alert">
+                    <div id="alert-text"><h1>sssasdawdawdwad!asdawda</h1></div>
+                    <div id="alert-close"><button onClick="this.parentNode.parentNode.style.display =  'none'">Close!</button></div>
+
+                
+          </div>
         </div>
-        <div id="my-alert">
-          <div id="alert-text"><h1>sssasdawdawdwad!asdawda</h1></div>
-          <div id="alert-close"><button onClick="this.parentNode.parentNode.style.display =  'none'">Close!</button></div>
-      </div>
-        <script src="app.js"></script>
+        <!-- <script src="app.js"></script> -->
         <script>alert("I am an alert box!");</script>
+        
 </body>
 </html>
+
+<?php
+
+
+
+?>

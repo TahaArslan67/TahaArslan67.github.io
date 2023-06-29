@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rapor</title>
-    <link rel="icon" href="cecico.ico"image/x-icon" />
+    <title>Sıkça Sorulan Sorular</title>
 </head>
 <body class="banner">
     <!doctype html>
@@ -19,9 +18,10 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
-  <style>
-    .banner{
-      background: url('pexels-francesco-ungaro-2835436.jpg') no-repeat center center fixed;
+</html>
+<style>
+  .banner{
+    background: url('pexels-francesco-ungaro-2835436.jpg') no-repeat center center fixed;
   width: 100%;
   height: 100%;
   -webkit-background-size: cover;
@@ -38,13 +38,9 @@
     .intent3{
         text-indent: 0px;
     }
-    .ustmenu{
-	position:fixed; top:0px; left:0px; right:0px; 
-    height:70px; background:rgba(0.8);
-}
 </style>
 
-<div class="container ustmenu">
+<div class="container">
     <nav class="navbar navbar-expand-lg intent1">
         <div class="container-fluid">
             <a class="navbar-brand" href="Home.html">
@@ -60,28 +56,25 @@
                 <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
               </li>
               <li class="nav-item intent2">
-                <a class="nav-link" href="Programs.html">Programs</a>
+                <a class="nav-link" href="Programs.php">Programs</a>
               </li>
               <li class="nav-item intent2">
-                <a class="nav-link" href="additions.html">Additions</a>
+                <a class="nav-link" href="additions.php">Additions</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle intent2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Help
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item intent3" href="FAQ.HTML">○  FAQ</a></li>
-                  <li><a class="dropdown-item intent3" href="Report.html">○  Report</a></li>
+                  <li><a class="dropdown-item intent3" href="FAQ.php">○  FAQ</a></li>
+                  <li><a class="dropdown-item intent3" href="Report.php">○  Report</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item intent3" href="Contact.html">○  Contact</a></li>
+                  <li><a class="dropdown-item intent3" href="Contact.php">○  Contact</a></li>
                 </ul>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-</div>
-
-</html>
 </body>
 </html>

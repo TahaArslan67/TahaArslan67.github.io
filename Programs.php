@@ -70,20 +70,20 @@
                     <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
                   </li>
                   <li class="nav-item intent2">
-                    <a class="nav-link" href="Programs.html">Programs</a>
+                    <a class="nav-link" href="Programs.php">Programs</a>
                   </li>
                   <li class="nav-item intent2">
-                    <a class="nav-link" href="additions.html">Additions</a>
+                    <a class="nav-link" href="additions.php">Additions</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle intent2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Help
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item intent3" href="FAQ.HTML">○  FAQ</a></li>
-                      <li><a class="dropdown-item intent3" href="Report.html">○  Report</a></li>
+                      <li><a class="dropdown-item intent3" href="FAQ.php">○  FAQ</a></li>
+                      <li><a class="dropdown-item intent3" href="Report.php">○  Report</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item intent3" href="Contact.html">○  Contact</a></li>
+                      <li><a class="dropdown-item intent3" href="Contact.php">○  Contact</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -104,11 +104,11 @@
 <div>
           <ol class="yazibüyütme">
 <div class="s340">
-              <a href="GayMeter.html"> <button class="button-1 button1">1. GAY METER</button></a>
-              <a href="GuessNumber.html"><button class="button-1 button1">2. GUESS NUMBER</button></a>
-              <a href="dice.html"><button class="button-1 button1">3. DICE GAME</button></a>
-              <a href="english word practice.html"><button class="button-1 button1">4. ENGLISH PRACTICE APP (NOT DONE)</button></a>
-              <a href="tarot.html"><button class="button-1 button1">5. TAROT</button></a>
+              <a href="GayMeter.php"> <button class="button-1 button1">1. GAY METER</button></a>
+              <a href="GuessNumber.php"><button class="button-1 button1">2. GUESS NUMBER</button></a>
+              <a href="dice.php"><button class="button-1 button1">3. DICE GAME</button></a>
+              <a href="english word practice.php"><button class="button-1 button1">4. ENGLISH PRACTICE APP (NOT DONE)</button></a>
+              <a href="tarot.php"><button class="button-1 button1">5. TAROT</button></a>
             </div>
         </ol></div>
 <br><br>

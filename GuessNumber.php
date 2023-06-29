@@ -12,7 +12,7 @@
   <header>
 <h1>Sayı Tahmin Et!</h1>
 <p class="between">(1-20 Arası)</p>
-<a href="https://tahaarslan67.github.io/GuessNumber.html"><button class="btn again">Tekrar Başlat</button></a>
+<a href="https://tahaarslan67.github.io/GuessNumber.php"><button class="btn again">Tekrar Başlat</button></a>
 <div class="number">?</div>
   </header>
 <main>

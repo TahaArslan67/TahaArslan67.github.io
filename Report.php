@@ -101,20 +101,20 @@ input[type=submit]:hover {
                 <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
               </li>
               <li class="nav-item intent2">
-                <a class="nav-link" href="Programs.html">Programs</a>
+                <a class="nav-link" href="Programs.php">Programs</a>
               </li>
               <li class="nav-item intent2">
-                <a class="nav-link" href="additions.html">Additions</a>
+                <a class="nav-link" href="additions.php">Additions</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle intent2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Help
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item intent3" href="FAQ.HTML">○  FAQ</a></li>
-                  <li><a class="dropdown-item intent3" href="Report.html">○  Report</a></li>
+                  <li><a class="dropdown-item intent3" href="FAQ.php">○  FAQ</a></li>
+                  <li><a class="dropdown-item intent3" href="Report.php">○  Report</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item intent3" href="Contact.html">○  Contact</a></li>
+                  <li><a class="dropdown-item intent3" href="Contact.php">○  Contact</a></li>
                 </ul>
               </li>
             </ul>
@@ -124,7 +124,7 @@ input[type=submit]:hover {
      
 </div>
 <div class="container1">
-  <form action="Home.html" method="post">
+  <form action="report.php" method="post">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -159,27 +159,33 @@ input[type=submit]:hover {
 </html>
 
 
-<!-- <?php
+<?php
 
 include("baglanti.php");
 
-if(isset($_POST["firstname"], $_POST["lastname"], $_POST["age"], $_POST["subject"]))
+if(isset($_POST["firstname"], $_POST["lastname"], $_POST["radio"], $_POST["age"], $_POST["age"], $_POST["subject"]))
 {
   $ad=$_POST["firstname"];
   $soyad=$_POST["lastname"];
-  $age=$_POST["age"];
-  $subject=$_POST["subject"];
+  $cinsiyet=$_POST["radio"];
+  $yas=$_POST["age"];
+  $mesaj=$_POST["subject"];
 
-  $ekle="INSERT INTO iletisim(ad, soyad, age, subject ) VALUES ('".$ad."','".$soyad."','".$age."','".$subject."')";
+  $ekle="INSERT INTO iletisim(ad, soyad, cinsiyet, yas, mesaj) VALUES ('".$ad."','".$soyad."','".$cinsiyet."','".$yas."','".$mesaj."')";
 
+if($baglan->query($ekle)===TRUE)
+{
+  echo "<script>alert('Mesajınız başarı ile gönderilmiştir')<script>";
+}
+else
+{
+  echo "<script>alert('Mesajınız başarı ile gönderilememiştir')<script>";
+}
 
-  if($baglan->query($ekle)===TRUE)
-  {
-    echo "<script>alert('Mesajınız başarılı')</script>";
-  }
 }
 
 
+?>
 
-// ?> 
--->
+
+

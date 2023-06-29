@@ -1,3 +1,6 @@
+<?php
+ob_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -210,19 +213,20 @@ padding-bottom: 10px;
     }
 </style>
     <div class="">
-        <form class="kayis2 col-sm-12 col-md-4 col-lg-4 asd kayis container" action="Home.html"; onbutton="return fonksio()">
+        <form class="kayis2 col-sm-12 col-md-4 col-lg-4 asd kayis container" action="index.php" method="post">
 
 
 <h3 class="p1">
-    <i>Username:<input class="user" autocomplete="off" type="text" name="klncadi" id="klncadi" onkeydown="if (event.keyCode == 13) { fonksio(); }"></i>
+    <i>Username:<input class="user" autocomplete="off" type="text" name="klncadi" id="klncadi"></i>
 </h3>
 
 <h3 class="h3">
-    <i>Password:<input type="password" name="password" id="password" onkeydown="if (event.keyCode == 13) { fonksio(); }"></i>
+    <i>Password:<input type="password" name="password" id="password"></i>
 </h3>
 
 <div class="a">
-    <input id="giris" type="button" onclick="fonksio()"  value="LOGIN" name="giriş">
+    <input id="giris" type="button" onclick="fonksio()" value="LOGIN" name="giriş">
+    <button type="submit">Giriş Yap</button>
 </div>
 
 
@@ -232,7 +236,7 @@ padding-bottom: 10px;
     <strong>Danger!</strong> Invalid username and/or password.
   </div></div>
 
-
+  
 
 
 
@@ -240,3 +244,14 @@ padding-bottom: 10px;
 <script src="index.js"></script>
 </body>
 </html>
+<?php
+session_start();
+if(isset($_POST["klncadi"], $_POST["password"]))
+{
+if($_POST["klncadi"]=="taharslan" && $_POST["password"]=="00228t")
+{
+    $_SESSION["user"]=$_POST["klncadi"];
+    header("location:home.php");
+}
+}
+?>
